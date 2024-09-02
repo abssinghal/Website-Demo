@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brand and Model</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Select Your Mobile Brand and Model</h2>
+    <form id="selectionForm">
+        <label for="brand">Mobile Brand:</label>
+        <select id="brand" name="brand">
+            <!-- Populated dynamically -->
+        </select>
+
+        <label for="model">Mobile Model:</label>
+        <select id="model" name="model">
+            <!-- Populated dynamically -->
+        </select>
+    </form>
+
+    <div id="result"></div>
+
+    <!-- Back button -->
+    <button id="backButton">Back to Sign In</button>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        // JavaScript to handle the back button click event
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
